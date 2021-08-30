@@ -5,9 +5,11 @@ const addPrefix = (prefix) => {
   return (selectors) => {
     selectors.each((selector) => {
       for (let node of selector.nodes) {
-        node.replaceWith(
-          `${node.spaces.before}${prefix} ${node.value}${node.spaces.after}`
-        );
+        if(node.type === 'class' &&  typeof node.parent.nodes[0] !== 'string') {
+          node.replaceWith(
+            `${node.spaces.before}${prefix} .${node.value}`
+          );
+        }
       }
     });
   };
@@ -15,7 +17,6 @@ const addPrefix = (prefix) => {
 
 module.exports = (css, prefix = '.scoped') => {
   const ast = postcss.parse(css);
-
   ast.walkRules((rule) => {
     rule.selector = selectorParser(addPrefix(prefix)).process(rule.selector).result;
   });

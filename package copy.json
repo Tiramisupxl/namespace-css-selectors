@@ -1,0 +1,72 @@
+{
+  "_from": "add-namespace-css",
+  "_id": "add-namespace-css@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-7R+RbbHOozCpHs2p01o53hddv1o=",
+  "_location": "/add-namespace-css",
+  "_phantomChildren": {
+    "escape-string-regexp": "1.0.5",
+    "flatten": "1.0.3",
+    "has-ansi": "2.0.0",
+    "indexes-of": "1.0.1",
+    "js-base64": "2.6.4",
+    "uniq": "1.0.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "namespace-css-selectors",
+    "name": "namespace-css-selectors",
+    "escapedName": "namespace-css-selectors",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/namespace-css-selectors/-/namespace-css-selectors-1.2.0.tgz",
+  "_shasum": "ed1f916db1cea330a91ecda9d35a39de175dbf5a",
+  "_spec": "namespace-css-selectors",
+  "_where": "/Users/pxl/Documents/PXL/github/namespace-css-selectors",
+  "author": {
+    "name": "Steve Kinney",
+    "email": "hello@stevekinney.net",
+    "url": "http://stevekinney.net"
+  },
+  "bugs": {
+    "url": "https://github.com/stevekinney/namespace-css-selectors/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "postcss": "^5.2.16",
+    "postcss-selector-parser": "^2.2.3"
+  },
+  "deprecated": false,
+  "description": "Prefix CSS selectors to avoid collisions and live in harmony with nature.",
+  "devDependencies": {
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "jest": "^19.0.2",
+    "rollup": "^0.47.6",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "homepage": "https://github.com/Tiramisupxl/css-add-namespace#readme",
+  "license": "MIT",
+  "main": "./dist/namespace-css-selectors.js",
+  "name": "add-namespace-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiramisupxl/css-add-namespace.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "version": "1.2.2"
+}
